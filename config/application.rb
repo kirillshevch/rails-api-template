@@ -16,14 +16,6 @@ module RailsApiTemplate
   class Application < Rails::Application
     config.api_only = true
 
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins '*'
-        resource '*', headers: :any, methods: :any,
-                      expose: ['access-token', 'expiry', 'token-type', 'uid', 'client']
-      end
-    end
-
     config.action_mailer.default_url_options = { host: ENV['DOMAIN'] }
 
     config.action_mailer.smtp_settings = {
