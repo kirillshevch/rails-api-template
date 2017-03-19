@@ -22,4 +22,4 @@
 /config/database.yml
 
 # Dotenv
-.end.production
+.env.production
