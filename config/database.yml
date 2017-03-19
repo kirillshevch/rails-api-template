@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 15
+
+development:
+  <<: *default
+  database: rails-api-template_development
+
+test:
+  <<: *default
+  database: rails-api-template_test
+
+production:
+  <<: *default
+  database: rails-api-template_production
+  username: <%= ENV['PG_USERNAME'] %>
+  password: <%= ENV['PG_PASSWORD'] %>
+ 
