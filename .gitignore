@@ -18,8 +18,5 @@
 .ruby-version
 .ruby-gemset
 
-# Hide db config
-/config/database.yml
-
 # Dotenv
 .env.production
