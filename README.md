@@ -9,6 +9,26 @@ Add your dev credentials to .env and production to .env.production
     $ rails db:create
     $ rails db:migrate
     $ rails s
+    
+## Deploy
+
+[chef-template](https://github.com/kirillweb/chef-template)
+
+    First time:
+    
+    $ cap production deploy
+    $ cap production deploy:upload_configs
+    $ cap production deploy
+    
+    Next releases:
+    
+    $ cap production deploy
+    
+    Additional tasks:
+    
+    $ cap production app:stop
+    $ cap production app:start
+    $ cap production app:restart
 
 ## Auth
     
