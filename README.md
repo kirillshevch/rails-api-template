@@ -12,7 +12,7 @@ Add your dev credentials to .env and production to .env.production
     
 ## Deploy
 
-[chef-template](https://github.com/kirillweb/chef-template)
+[Using Chef and Capistrano to deploy Rails application on Ubuntu 16.04](https://medium.com/@kirill_shevch/using-chef-and-capistrano-to-deploy-rails-application-on-ubuntu-16-04-fae1dfe0dd12)
 
     First time:
     
