@@ -18,6 +18,16 @@ set :linked_files, ['.env']
 set :linked_dirs, ['log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle']
 
 namespace :deploy do
+  desc 'create_db'
+  task :create_db do
+    on roles(:app) do
+      invoke 'rvm1:hook'
+      within release_path do
+        execute :bundle, :exec, :"rails db:create RAILS_ENV=#{fetch(:stage)}"
+      end
+    end
+  end
+
   desc 'Uploads required config files'
   task :upload_configs do
     on roles(:all) do
@@ -35,6 +45,7 @@ namespace :deploy do
     end
   end
 
+  before 'deploy:migrate', 'deploy:create_db'
   after :finished, 'deploy:seed'
   after :finished, 'app:restart'
 end
