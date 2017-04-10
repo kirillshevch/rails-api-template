@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 5.0'
+gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.19'
 gem 'puma', '~> 3.8'
 gem 'devise_token_auth', '~> 0.1.4'

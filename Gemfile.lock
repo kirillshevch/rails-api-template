@@ -173,7 +173,7 @@ DEPENDENCIES
   pg (~> 0.19)
   puma (~> 3.8)
   rack-cors (~> 0.4.1)
-  rails (~> 5.0)
+  rails (~> 5.0.2)
   rvm1-capistrano3 (= 1.4.0)
   spring
   spring-watcher-listen (~> 2.0.0)
