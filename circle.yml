@@ -1,3 +1,12 @@
 machine:
   ruby:
     version: 2.3.4
+deployment:
+  staging:
+    branch: staging
+    commands:
+      - bundle exec cap staging deploy
+  production:
+    branch: production
+    commands:
+      - bundle exec cap production deploy
