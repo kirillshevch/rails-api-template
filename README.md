@@ -3,7 +3,7 @@
 Add your dev credentials to .env and production to .env.production
 
 ## Install
-    $ git clone git@github.com:kirillweb/rails-api-template.git
+    $ git clone git@github.com:kirillshevch/rails-api-template.git
     $ cd rails-api-template
     $ bundle install
     $ rails db:create
